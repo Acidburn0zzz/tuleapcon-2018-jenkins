@@ -1,30 +1,32 @@
-= Bespoke.js Starter
+= Jenkins BlueOcean Pipeline Editor with Tuleap
 :!sectids:
 :imagesdir: images
 
-Le Jenkins nouveau est déjà là (~ 7 min)
-2016: Pipeline / jenkins.io
-2017: Blue Ocean/Declarative Pipeline
-2018 (future) : Jenkins Essentials / Jenkins X / Configuration-as-Code
-De Zéro à Livraison Continue en 5 minutes (~ 5 min)
-Un tour de BlueOcean
-Notre premier Pipeline
-Un “Pipeline” dans la vraie vie: quelque fonctions avancées
-Jenkins “moderne” et Tuleap (~8 min)
-Modernisation de l’intégration (MultiBranch Pipeline vers un dépôt Gerrit)
-Jenkins Pipeline Shared Library à votre service (réutiliser la logique de communication / parsing depuis Tuleap)
-Amélioration: plugin Jenkins natif pour Tuleap (Scannage d’organisation, gestion des Pull Requests complète, SSO/délégation de sécurité)
+[.cue]
+****
+**Abstract :**
+Précurseur dans son domaine, Jenkins s'est récemment modernisé avec
+une forte orientation "Développeur",
+pour faciliter la conception et l'agilité du processus CI/CD.
 
+Au coeur de ces changements: l'interface graphique "Blue Ocean"
+et la nouvelle syntaxe de pipeline dite "Déclarative",
+proche du YAML ou du JSON.
 
-// == Topic Slide
-//
-// == Key Points
-// [%build]
-// * First point
-// * Second point
-// * Final point
-//
-// == !
-// image::html5.svg[]
-//
-// == The End
+Découvrons ensemble quel gains tirer de ce ces changements
+lorsque l’on utilise Tuleap avec du Jenkins "moderne".
+****
+
+== Le Jenkins nouveau est déjà là (~ 7 min)
+
+== 2016: Pipeline / jenkins.io
+== 2017: Blue Ocean/Declarative Pipeline
+== 2018 (future) : Jenkins Essentials / Jenkins X / Configuration-as-Code
+== De Zéro à Livraison Continue en 5 minutes (~ 5 min)
+== Un tour de BlueOcean
+== Notre premier Pipeline
+== Un “Pipeline” dans la vraie vie: quelque fonctions avancées
+== Jenkins “moderne” et Tuleap (~8 min)
+== Modernisation de l’intégration (MultiBranch Pipeline vers un dépôt Gerrit)
+== Jenkins Pipeline Shared Library à votre service (réutiliser la logique de communication / parsing depuis Tuleap)
+== Amélioration: plugin Jenkins natif pour Tuleap (Scannage d’organisation, gestion des Pull Requests complète, SSO/délégation de sécurité)
