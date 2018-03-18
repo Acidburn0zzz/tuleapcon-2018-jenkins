@@ -1,0 +1,7 @@
+
+= License
+
+image::https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg[caption="License: CC BY 4.0",link="https://creativecommons.org/licenses/by/4.0/"]
+
+Le contenu de ce dépôt est sous license Creative Commons 4.0:
+link:https://creativecommons.org/licenses/by/4.0/[]

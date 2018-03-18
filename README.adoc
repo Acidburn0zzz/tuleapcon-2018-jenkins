@@ -1,0 +1,80 @@
+
+= TuleapCon 2018: Jenkins BlueOcean Pipeline Editor with Tuleap
+:ext-relative: {outfilesuffix}
+:WIP: Work in progress...
+
+Ce dépôt contient tous le matériel (slides et démo) de la présentation
+"Jenkins BlueOcean Pipeline Editor with Tuleap" lors de la
+link:https://tuleapcon.tuleap.org/[TuleapCon 2018 à Lyon].
+
+== Slides
+
+=== Slides en ligne
+
+Les slides sont disponibles aux adresses suivantes :
+
+* Format HTML:
+link:https://dduportal.github.io/presentations/tuleapcon-2018-jenkins[]
+
+* Format PDF:
+link:https://dduportal.github.io/presentations/tuleapcon-2018-jenkins.pdf[]
+
+* Format "SlideShare" : {WIP}
+
+=== Générer les slides depuis la source
+
+Si vous souhaiter contribuer (ou vous amuser...),
+vous pouvez générer les slides depuis la source :
+
+Les slides sont écrites en source link:https://asciidoctor.org/[AsciiDoctor],
+et le rendu HTML est effectué avec
+link:https://github.com/asciidoctor/asciidoctor-bespoke[].
+
+* Vous avez besoin d'installer
+link:https://docs.docker.com/compose/install/[docker-compose et Docker] et
+link:https://git-scm.com/[git]
+* Clonez le dépôt à l'aide de _Git_
+* Avec votre ligne de commande (shell, CMD, PowerShell),
+positionnez-vous dans le dossier `slides` et exécutez `docker-compose` :
++
+[source,bash]
+----
+cd ./slides # Depuis la racine du dépôt de code
+docker-compose up -d
+----
+* Un serveur web HTTP est alors lancé sur votre machine,
+sur le port 8000 de l'interface localhost.
+Ouvrez l'URL link:http://localhost:8000[] pour voir les slides.
+** Si vous éditez les sources Asciidoctor,
+le serveur web détectera le changement et rechargera la page
+en incluant les modifications
+* Pour arrêter le serveur web, utilisez la commande suivante
+depuis le dossier `slides` :
++
+[source,bash]
+----
+docker-compose down -v
+----
+
+== Demo
+
+{WIP}
+
+== Contribuer
+
+Si vous voyez une erreur de typgraphie,
+un élément de la démo qui ne fonctionne pas,
+ou tout autre élément nécessitant une correction,
+n'hésitez pas à contribuer.
+
+* "Forkez" le dépôt dans votre propre compte Github
+* Modifiez ce que vous souhaitez, et poussez sur votre compte Github
+* Ouvrez une
+link:https://help.github.com/articles/about-pull-requests/["Pull Request"]
+pour proposer la contribution.
+
+== License
+
+Ce dépôt et son contenu sont soumis à une license,
+disponible sur la page suivante :
+link:LICENSE{ext-relative}[]
