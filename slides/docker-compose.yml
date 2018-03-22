@@ -3,8 +3,13 @@ version: '3.4'
 services:
   slides:
     image: dduportal/asciidoctor-bespoke@sha256:2a226a447b682132cd39266c9a9b36e32583a5475958d2d0480f9299852cca9b
+    tmpfs:
+      - "/tmp"
     ports:
       - "8000:8000"
       - "35729:35729"
+    entrypoint: sh -c "npm install && gulp build serve"
     volumes:
       - ./src:/presentation/src
+      - ./package.json:/presentation/package.json
+      - ./public:/presentation/public

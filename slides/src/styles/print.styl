@@ -1,5 +1,5 @@
 @page
-  size $slide-width $slide-height
+  size 1024px 640px
   margin 0
 
 @media print
@@ -20,11 +20,9 @@
   .bespoke-slide
     opacity unset
     zoom unset !important
-    // page break should be implied, but sometimes is necessary
-    page-break-after always
-    // enable this next property to see where you're getting overflows
-    //overflow visible
 
   .bespoke-bullet-inactive
     opacity unset
-    visibility visible
+
+  .bespoke-title
+    display none

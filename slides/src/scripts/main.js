@@ -10,15 +10,16 @@ var isWebKit = 'webkitAppearance' in document.documentElement.style,
   nav = require('bespoke-nav'),
   overview = require('bespoke-overview'),
   scale = require('bespoke-scale'),
-  progress = require('bespoke-progress');
+  title = require('bespoke-title'),
+  onstage = require('bespoke-onstage');
 
 bespoke.from({ parent: 'article.deck', slides: 'section' }, [
   classes(),
   nav(),
   fullscreen(),
   (scaleMethod ? scale(scaleMethod) : function(deck) {}),
-  overview({ columns: 4 }),
+  overview({ margin: 300, autostart: false, title: true, numbers: true, columns: 4 }),
   bullets('.build, .build-items > *:not(.build-items)'),
   hash(),
-  progress()
+  onstage()
 ]);

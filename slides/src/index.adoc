@@ -1,23 +1,47 @@
 = Jenkins BlueOcean Pipeline Editor with Tuleap
+Damien DUPORTAL <https://dduportal.github.io>
 :!sectids:
 :imagesdir: images
+:noheader:
+:organization: CloudBees
+:position: Training Engineer
+:twitter: @DamienDuportal
+:avatar: dduportal.jpg
 
-[.cue]
-****
-**Abstract :**
-Précurseur dans son domaine, Jenkins s'est récemment modernisé avec
+== Abstract
+
+* Précurseur dans son domaine, Jenkins s'est récemment modernisé avec
 une forte orientation "Développeur",
 pour faciliter la conception et l'agilité du processus CI/CD.
 
-Au coeur de ces changements: l'interface graphique "Blue Ocean"
+* Au coeur de ces changements: l'interface graphique "Blue Ocean"
 et la nouvelle syntaxe de pipeline dite "Déclarative",
 proche du YAML ou du JSON.
 
-Découvrons ensemble quel gains tirer de ce ces changements
+* Découvrons ensemble quel gains tirer de ce ces changements
 lorsque l’on utilise Tuleap avec du Jenkins "moderne".
-****
 
-== Le Jenkins nouveau est déjà là (~ 7 min)
+
+
+[transform=speaker]
+== Whoami
+
+== Qui a connu ceci ?
+
+image::90s.png[Apple and Google Home Pages in the 90s,850]
+
+[.note]
+Inspiré par mon compère https://www.the-captains-shack.com/about_me/["Captain Igloo"]
+
+== Et ceci ?
+
+image::hudson-90s.png[Hudson Screenshots,850]
+
+[.shout]
+== Le Jenkins nouveau est arrivé !
+
+== !
+image::blueocean-pipeline.jpg[A Blue Ocean Pipeline Example,role=cover canvas]
 
 == 2016: Pipeline / jenkins.io
 == 2017: Blue Ocean/Declarative Pipeline
