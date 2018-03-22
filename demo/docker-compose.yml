@@ -1,0 +1,35 @@
+version: '2.3'
+
+volumes:
+  jenkins-data:
+  tuleap-data:
+
+services:
+  jenkins:
+    build: ./jenkins/
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+    - jenkins-data:/var/jenkins_home
+    environment:
+    - JENKINS_EXTERNAL_URL=http://localhost:8080/jenkins
+    - JENKINS_OPTS=--prefix=/jenkins
+
+  jenkins-node:
+    build: ./jenkins-agent/
+    restart: unless-stopped
+    privileged: true # Required for running docker in docker
+    environment: # Provide the vagrant insecure SSh key
+    - JENKINS_SLAVE_SSH_PUBKEY=ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA6NF8iallvQVp22WDkTkyrtvp9eWW6A8YVr+kz4TjGYe7gHzIw+niNltGEFHzD8+v1I2YJ6oXevct1YeS0o9HZyN1Q9qgCgzUFtdOKLv6IedplqoPkcmF0aYet2PkEDo3MlTBckFXPITAMzF8dJSIFo9D8HfdOV0IAdx4O7PtixWKn5y2hMNG0zQPyUecp4pzC6kivAIhyfHilFR61RGL+GPXQ2MWZWFYbAGjyiYJnAmCP3NOTd0jMZEnDkbUvxhMmBYSdETk1rRgm+R4LOzFUGaHqHDLKLX+FIPKcF96hrucXzcWyLbIbEgE98OHlnVYCzRdK8jlqm8tehUc9c9WhQ== vagrant insecure public key
+
+  tuleap:
+    image: enalean/tuleap-aio:9.18
+    volumes:
+      - tuleap-data:/data
+    environment:
+      - VIRTUAL_HOST=localhost
+    ports:
+      - "80:80"
+      - "443:443"
+      - "22:22"
