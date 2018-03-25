@@ -2,6 +2,8 @@
 Damien DUPORTAL <https://dduportal.github.io>
 :!sectids:
 :imagesdir: images
+:experimental: true
+:linkattrs:
 :noheader:
 :organization: CloudBees
 :position: Training Engineer
@@ -32,7 +34,7 @@ lorsque l’on utilise Tuleap avec du Jenkins "moderne".
 
 1. Le Jenkins nouveau est (déjà) arrivé !
 2. De Zéro à Livraison Continue en 5 minutes
-3 - Jenkins (moderne) & Tuleap
+3. Jenkins (moderne) & Tuleap
 
 == Qui a connu ceci ?
 
@@ -49,68 +51,80 @@ image::hudson-90s.png[Hudson Screenshots,850]
 == 1 - Le Jenkins nouveau est arrivé !
 
 == !
-image::blueocean-pipeline.jpg[A Blue Ocean Pipeline Example,role=cover canvas]
 
-== 2016: Pipeline / jenkins.io
+image::blueocean-pipeline.jpg[A Blue Ocean Pipeline Example,role=canvas cover]
 
-[.note]
-1 - Le Jenkins nouveau est (déjà) arrivé !
+== 2015 - Pipeline
 
-== 2017: Blue Ocean/Declarative Pipeline
+image::Jenkins-Pipeline.png[Jenkins Pipeline,width=400,role=center]
 
-[.note]
-1 - Le Jenkins nouveau est (déjà) arrivé !
+* "Coder" son Pipeline avec une DSL scriptée
+* Fichier `Jenkinsfile` dans le dépôt de code
+* Survit au redémarrage du Jenkins Master
 
-== 2018 (future) : Jenkins Essentials / Jenkins X / Configuration-as-Code
 
-[.note]
-1 - Le Jenkins nouveau est (déjà) arrivé !
+== 2016 - Jenkins.io
 
+
+* link:https://jenkins.io[https://jenkins.io,window="_blank"]
+* link:https://plugins.jenkins.io[https://plugins.jenkins.io, window="_blank"]
+
+image::jenkins-io-homepage.jpg[Jenkins.io Home Page,width=700,role=center]
+
+== 2017 - Blue Ocean
+
+* Une nouvelle expérience utilisateur,
+orienté **Dévelopeurs**,
+écrite en link:https://reactjs.org/[React.js,window="_blank"]
+** _À côté_ de l'interface existante : `http://jenkins**/blue/**`
+* Pipeline : Syntaxe **Déclarative**
+
+image::blueocean-pipeline.jpg[A Blue Ocean Pipeline Example,width=500,role=center]
+
+== 2018
+
+* link:https://github.com/jenkinsci/jep/tree/master/jep/300[Jenkins Essentials,window="_blank"]
+ : Simple, Sain, À Jour, Toujours Vert
++
+image::jenkins-magician.png[Jenkins Magician Icon,width=80]
+
+* link:http://jenkins-x.io/[Jenkins X,window="_blank"]
+ : Intégration et Déploiement Continus pour Kubernetes
++
+image::jenkinx-x.png[Jenkinx X Logo, width=80]
+
+* link:https://github.com/jenkinsci/configuration-as-code-plugin[Jenkins Configuration as Code,window="_blank"]
+ : Configuration complète avec du YAML.
+
+image::jenkins-casc-logo.svg[Jenkins Configuration as Code Logo, width=80]
 
 [.shout]
 == 2 - De Zéro à Livraison Continue...
 ...en 5 minutes
 
-== Un tour de BlueOcean
+== Démo
 
-[.note]
-2 - De Zéro à Livraison Continue en 5 minutes
-
-== Notre premier Pipeline
-
-[.note]
-2 - De Zéro à Livraison Continue en 5 minutes
-
-== Un “Pipeline” dans la vraie vie: quelque fonctions avancées
-
-[.note]
-2 - De Zéro à Livraison Continue en 5 minutes
+[%build]
+1. Un tour dans Blue Ocean
+2. Notre premier Pipeline
+3. Un Pipeline dans la vraie vie
 
 [.shout]
 == 3 - Jenkins “moderne” et Tuleap
 
 == Modernisation de l’intégration
 
-* MultiBranch Pipeline vers un dépôt Gerrit
-
-[.note]
-3 - Jenkins “moderne” et Tuleap
+* MultiBranch Pipeline vers un dépôt Git
 
 == Jenkins Pipeline Shared Library à votre service
 
 * Réutiliser la logique de communication / parsing depuis Tuleap
-
-[.note]
-3 - Jenkins “moderne” et Tuleap
 
 == Amélioration: plugin Jenkins natif pour Tuleap
 
 * Scannage d’organisation
 * Gestion complète des Pull Requests
 * SSO/délégation de sécurité
-
-[.note]
-3 - Jenkins “moderne” et Tuleap
 
 [.shout]
 == Merci !

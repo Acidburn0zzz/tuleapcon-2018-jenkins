@@ -43,7 +43,7 @@ html { box-sizing: border-box }
   height 640px
   margin-top -(@height / 2)
   top 50%
-  padding 105px 120px
+  padding 2em 4em
 
 .bespoke-active
   pointer-events auto
@@ -64,7 +64,7 @@ html { box-sizing: border-box }
     color #666
     margin 0 0 37px 0
   p, ul, ol
-    margin 0 0 2em 0
+    margin 0 0 1em 0
   p, li, figcaption
     // reset line-height to match 2x font-size; not inheriting properly when using zoom-based scaling; must be em
     // ...or perhaps value is just shown wrong in the inspector
@@ -86,6 +86,10 @@ html { box-sizing: border-box }
       font-style normal
   figure
     margin 0
+    img
+      display block
+      margin-left auto
+      margin-right auto
   figcaption
     margin -2em 0 2em 0
     font-weight bold
