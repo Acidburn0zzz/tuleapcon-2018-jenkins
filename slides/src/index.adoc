@@ -62,6 +62,13 @@ image::Jenkins-Pipeline.png[Jenkins Pipeline,width=400,role=center]
 * Fichier `Jenkinsfile` dans le dépôt de code
 * Survit au redémarrage du Jenkins Master
 
+== 2016 - Multi-Branches Pipelines
+
+* Gestion natives des branches SCM
+* Concept simple: un dossier qui "scanne" le dépôt de code
+** Un "Pipeline" par branche : création/suppression automatiques
+* Extension à GitHub, BitBucket : "Organization scanning"
+** 1 projet Multi-Branche par dépôt de l'organisation. **Automatiquement**
 
 == 2016 - Jenkins.io
 
@@ -112,19 +119,31 @@ image::jenkins-casc-logo.svg[Jenkins Configuration as Code Logo, width=80]
 [.shout]
 == 3 - Jenkins “moderne” et Tuleap
 
-== Modernisation de l’intégration
+== Court Terme : "Out of the Box"
 
-* MultiBranch Pipeline vers un dépôt Git
+[%build]
+1. "Out of the Box" : MultiBranch Pipeline vers un dépôt Git, en SSH.
+2. Webhooks configurés en suivant la documentation du
+link:https://plugins.jenkins.io/git#GitPlugin-Pushnotificationfromrepository[plugin Git, windows="_blank"]
+ :
+** `curl ${JENKINS_URL}/git/notifyCommit?url=<GIT URL>`
+3. "Jenkins Pipeline Shared Library" - réutiliser votre code Pipeline :
+** `vars/customDeploy.groovy` dans le Git "jenkins-company-libs"
++
+image::pipeline-using-shared-libs.png[Pipelin Using Shared Library,height=150]
 
-== Jenkins Pipeline Shared Library à votre service
+== Long Terme : "I had a dream"
 
-* Réutiliser la logique de communication / parsing depuis Tuleap
+[%build]
+* Plugin natif Tuleap :
+** Scannage d’organisation avec gestion complète
+des Pull Requests et des webhooks
+** SSO/délégation de sécurité
 
-== Amélioration: plugin Jenkins natif pour Tuleap
-
-* Scannage d’organisation
-* Gestion complète des Pull Requests
-* SSO/délégation de sécurité
+* Configuration as Code :
+** Tuleap URL + Token dans un fichier YAML +
+version du plugin Jenkins Tuleap
+** Démarrer Jenkins : Auto-configuration et auto-mise à jour !
 
 [.shout]
 == Merci !
