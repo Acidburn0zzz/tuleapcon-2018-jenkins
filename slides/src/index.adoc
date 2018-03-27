@@ -24,8 +24,27 @@ proche du YAML ou du JSON.
 lorsque l’on utilise Tuleap avec du Jenkins "moderne".
 
 
-[transform=speaker]
 == Whoami
+
+image::dduportal.jpg[Damien Duportal,width=200]
+
+* Damien DUPORTAL
+* Training Engineer @ CloudBees
+* dduportal@cloudbees.com - damien.duportal@gmail.com
+* link:https://twitter.com/DamienDuportal[@DamienDuportal,window="_blank"]
+
+== CloudBees Inc.
+
+image::cloudbees-logo.png[CloudBees Logo,height=100]
+
+* We help our customers deliver _software at the speed of ideas_
+* We Provide the Solutions that Enable Enterprises to Scale Jenkins
+* Subscription based model
+* CloudBees Jenkins Solutions :
+** CloudBees Jenkins Enterprise
+** DevOptics
+
+</marketing>
 
 [.shout]
 == Et vous ?
