@@ -13,3 +13,8 @@ services:
       - ./src:/presentation/src
       - ./package.json:/presentation/package.json
       - ./public:/presentation/public
+  pdf:
+    image: astefanutti/decktape
+    volumes:
+      - ./public:/presentation/public
+    command: /presentation/public/index.html /presentation/public/slides.pdf

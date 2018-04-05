@@ -1,14 +1,18 @@
+
 = Jenkins BlueOcean Pipeline Editor with Tuleap
-Damien DUPORTAL <https://dduportal.github.io>
 :!sectids:
 :imagesdir: images
 :experimental: true
 :linkattrs:
 :noheader:
-:organization: CloudBees
-:position: Training Engineer
-:twitter: @DamienDuportal
-:avatar: dduportal.jpg
+
+[.shout]
+== Jenkins BlueOcean
+
+Pipeline Editor with Tuleap
+
+* link:https://dduportal.github.io/presentations/jenkins-tuleapcon-2018/index.html[Slides HTML,window="_blank"]
+* link:https://www.slideshare.net/legrimpeur/tuleapcon-2018-jenkins-blue-ocean-pipeline-editor-with-tuleap[Slides PDF (SlideShare),window="_blank"]
 
 == Abstract
 
