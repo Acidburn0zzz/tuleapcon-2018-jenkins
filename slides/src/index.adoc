@@ -33,6 +33,20 @@ image::dduportal.jpg[Damien Duportal,width=200]
 * dduportal@cloudbees.com - damien.duportal@gmail.com
 * link:https://twitter.com/DamienDuportal[@DamienDuportal,window="_blank"]
 
+== CloudBees and the Jenkins Community
+
+image::butler-w-kk.png[Butler with KK,width="100"]
+
+* Kohsuke Kawaguchi : Community leader and CTO at CloudBees
+
+* Code and Releases
+** CloudBees partners with the community on development
+** CloudBees engineers contribute significantly to the Jenkins project
+** CloudBees partners with the community on releases
+** CloudBees contributes fixes back to the community
+
+* Organizes Jenkins World and supports numerous Jenkins events
+
 == CloudBees Inc.
 
 image::cloudbees-logo.png[CloudBees Logo,height=100]
